@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && python app.py",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "install:all": "npm install && cd client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
